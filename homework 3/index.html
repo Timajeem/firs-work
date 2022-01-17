@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="index.js"></script>
+	<title>111</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>Каждый раз, когда вы нажимаете кнопку, getRndInteger(min, max) возвращает случайное число от 1 до 10 (оба включены):</p>
+	<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,16)">Нажми на меня</button>
+	<p id="demo"></p>
+	<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
+</body>
+</html>
